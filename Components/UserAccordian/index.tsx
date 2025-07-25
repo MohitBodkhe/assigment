@@ -149,6 +149,16 @@ export default function UserAccordion(props: Celebrity_Details) {
         <Accordion
           expanded={props.id == props.expanded}
           onChange={handleChange(props.id)}
+          sx={{
+            border: "1px solid grey",
+            borderBottomLeftRadius: "10px !important",
+            borderBottomRightRadius: "10px !important ",
+            boxShadow: "none",
+            borderTopLeftRadius: "10px !important",
+            borderTopRightRadius: "10px !important",
+            padding: "5px",
+            overflow: "visible",
+          }}
         >
           <EditCeleb
             {...{
